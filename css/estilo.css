@@ -1,0 +1,112 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    max-height: 100vh;
+}
+
+#header{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 30sp;
+}
+
+#contenedorMensaje{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#contenedorVideo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    position: relative;  /* Hace que los elementos dentro de este contenedor puedan ser posicionados sobre él */
+    height: 100%;
+}
+
+/* Video */
+#video {
+    width: 100%;
+    max-width: 35%;
+    height: auto;
+    object-fit: cover;
+    border: 10px solid #4CAF50;
+    border-radius: 10px;
+}
+
+/* Contenedor de la imagen superpuesta */
+#contenedorImagen {
+    position: absolute;
+    max-width: 35%;
+    display: none;  /* Inicialmente oculto */
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+    border: 10px solid #000000;
+    border-radius: 10px;
+}
+
+/* Imagen capturada */
+#imagenCapturada {
+    max-width: 100%;
+    height: auto;
+}
+
+/*Mensaje prediccion*/
+#contenedorRespuesta {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 20sp;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.controles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 30%;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+#botonCaptura {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+#botonCaptura:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+#sliderTiempo{
+    -webkit-appearance: none;  /* Quita el estilo predeterminado */
+    width: 40%;  /* Establece el ancho del slider */
+    height: 8px;  /* Establece la altura del slider */
+    background: #45a049;  /* Color de fondo del slider */
+    border-radius: 5px;  /* Bordes redondeados */
+    outline: none;  /* Elimina el borde cuando está enfocado */
+    margin-bottom: 50dp;
+}

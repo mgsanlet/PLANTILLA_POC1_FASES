@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Mario G. Sánchez">
+    <title>Examen Interfaces Naturales</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@latest/dist/teachablemachine-image.min.js"></script>
+</head>
+<body>
+
+    <div id="header">
+        <h1 id="contenedorMensaje"></h1>
+    </div>
+    
+    <div id="contenedorVideo">
+        <video id="video" autoplay></video>
+        <div id="contenedorImagen">
+            <img id="imagenCapturada" src="" alt="Imagen capturada de la webcam">
+            <div id="contenedorRespuesta"></div>
+        </div>
+    </div>
+    <div class="controles">
+        <button id="botonCaptura">Capturar Imagen</button>
+        <input type="range" id="sliderTiempo" min="0" max="100" value="0" disabled>
+    
+    </div>
+
+
+<script type="module" src="js/controlador-principal.js"></script>
+</body>
+</html>
