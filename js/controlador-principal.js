@@ -11,9 +11,9 @@ class ControladorPrincipal {
     // Máquina de estados
     #estados = [
         { objetivo: "Cara",  mensaje: "Fase 1. Detecta una cara" },
-        { objetivo: "Cara",  mensaje: "Fase 2. Detecta una mano" },
-        { objetivo: "Cara",   mensaje: "Fase 3. Detecta un ojo" },
-        { objetivo: "Cara", mensaje: "Fase 4.  Detecta una oreja" }
+        { objetivo: "Mano",  mensaje: "Fase 2. Detecta una mano" },
+        { objetivo: "Ojo",   mensaje: "Fase 3. Detecta un ojo" },
+        { objetivo: "Oreja", mensaje: "Fase 4.  Detecta una oreja" }
     ];
     #estadoActual = 0;
 
